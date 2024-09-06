@@ -24,6 +24,12 @@ def ta_bort_vokaler(text):
         text = text.replace(vokal, "")
     return text
 
+# Exempel:
+text = "Hej världen"
+print(ta_bort_vokaler(text))
+# Output: "Hj vrldn"
+
+
 #
 #   Uppgift 2
 # 
@@ -39,10 +45,7 @@ print(till_titel_case(text))
 
 # Output: "Hej Världen" 
 
-# Exempel:
-text = "Hej världen"
-print(ta_bort_vokaler(text))
-# Output: "Hj vrldn"
+
 
 #
 #   UPPGIFT 3
