@@ -5,9 +5,8 @@ def rakna_vokaler(text):
     vokaler = "aeiouåäöAEIOUÅÄÖ"  # Lista på vokaler både små och stora
     count = 0    
     for letter in text:
-        for vokal in vokaler:
-            if vokal == letter:
-                count += 1
+        if letter in vokaler:
+            count += 1
     return count
 
 # Exempel:
