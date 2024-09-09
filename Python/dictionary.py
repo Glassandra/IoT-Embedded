@@ -11,7 +11,7 @@ for project, worker_info in workers.items():
     for worker, hours in worker_info.items():
         if worker == "Erik" and hours > hours_eric[1]:
             hours_eric = [project, hours]
-        if worker == "Lina" and hours == 30:
+        if worker == "Lina" and hours > 30:
             lina_projects[project] = hours
 
 print(f"Erik worked most on {hours_eric[0]} with {hours_eric[1]} hours.")
