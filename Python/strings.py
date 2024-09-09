@@ -33,10 +33,7 @@ print(ta_bort_vokaler(text))
 #   Uppgift 2
 # 
 def till_titel_case(text):
-    temp = ""
-    for word in text.split(" "):
-        temp += word.capitalize() + " "
-    return temp
+    return text.title()
 
 # Exempel:
 text = "hej världen"
