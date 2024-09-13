@@ -21,4 +21,8 @@ while(True):
             print("Player wins!")
         else:
             print("Computer wins!")
-        print("Game Over!")
+        text = input("Play again? (yes/no): ").lower()
+        if text == "no":            
+            print("Game Over!")
+            break
+                     
