@@ -89,7 +89,7 @@ class Library:
                 print(f"{item._title} is available")
 
 
-library = Library()
+""" library = Library()
 user1 = LibraryUser("Pelle")
 user2 = LibraryUser("Emma")
 
@@ -121,4 +121,4 @@ library.list_items()
 
 library.borrow_item(user2, book2)
 library.borrow_item(user2, book3)
-library.summary()
+library.summary() """
