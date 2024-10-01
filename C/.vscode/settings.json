@@ -1,0 +1,7 @@
+{
+    "workbench.colorTheme": "Visual Studio Light",
+    "files.associations": {
+        "iostream": "cpp",
+        "ostream": "cpp"
+    }
+}
