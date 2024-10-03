@@ -35,10 +35,6 @@ int main()
                 cout << count[i] << " " << denominators[i] << "mynt, ";
             }
         }
-        /* cout << "Denominator is: " << denominators[i] << endl;
-        cout << "Number of bills is: " << count[i] << endl;
-        cout << "Change left is: ";
-        cout << difference << endl; */
     }
 
     return 0;
