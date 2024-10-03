@@ -14,7 +14,17 @@ int main()
         cin >> payed;
         cout << "Hur mycket kostade det? ";
         cin >> cost;
-        break;
+        if (!cin.good()) {
+            cout << "\nPlease use whole positive numbers. Try again" << endl;
+            cin.clear();
+            cin.ignore(INT_MAX, '\n');
+        }
+        else if (cost < payed && payed > 0 && cost >> 0) {
+            break;
+        }
+        else {
+            cout << "Invalid numbers, try again." << endl;
+        }
     }
 
     int difference = payed - cost;
