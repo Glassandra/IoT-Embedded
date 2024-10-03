@@ -43,8 +43,3 @@ int main()
 
     return 0;
 }
-
-int countDenominators(int value)
-{
-    return value;
-}
