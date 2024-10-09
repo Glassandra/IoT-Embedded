@@ -2,7 +2,7 @@
 
 using namespace std;
 
-int textInText(string& t1, string& t2) {
+int textInText(const string& t1,const string& t2) {
     int success = 0;
     for (int i = 0; i < t2.length(); i++) {
         if (t2[i] == t1[0]) {
@@ -21,8 +21,8 @@ int textInText(string& t1, string& t2) {
 }
 
 int main() {
-    string a = "hello";
-    string b = "imtestinghello";
+    const string a = "hello";
+    const string b = "imtestinghello";
     int test  = textInText(a, b);
     cout << "Test 1: " << test << endl;
     cout << "Test 2: " << textInText("hello", "theresno");
