@@ -13,14 +13,10 @@ int textInText(const string &t1, const string &t2)
             for (int j = 1; j < t1.length(); j++)
             {
                 if (t1[j] != t2[i + j])
-                {
                     success = -1;
-                }
             }
             if (success > 0)
-            {
                 break;
-            }
         }
     }
     return success;

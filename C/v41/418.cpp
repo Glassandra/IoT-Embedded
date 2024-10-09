@@ -4,16 +4,10 @@ using namespace std;
 
 float salary(int year)
 {
-    float sal;
     if (year == 1)
-    {
-        sal = 15000.0;
-    }
+        return 15000.0;
     else
-    {
-        sal = 1.04 * salary(year - 1) + 400;
-    }
-    return sal;
+        return 1.04 * salary(year - 1) + 400;
 }
 
 int main()

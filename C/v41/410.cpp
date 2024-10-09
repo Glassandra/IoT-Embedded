@@ -9,19 +9,13 @@ using namespace std;
 bool isAllowedVariable(string name)
 {
     if (name.empty())
-    {
         return false;
-    }
     if (!isalpha(name[0]) && name[0] != '_')
-    {
         return false;
-    }
     for (char c : name)
     {
         if (!isalnum(c) && c != '_')
-        {
             return false;
-        }
     }
 
     return true;

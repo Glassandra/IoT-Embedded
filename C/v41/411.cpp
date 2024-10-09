@@ -10,13 +10,9 @@ array<int, 2> bigAndSmall(string text)
     for (char c : text)
     {
         if (isupper(c))
-        {
             big++;
-        }
         else
-        {
             small++;
-        }
     }
     return {small, big};
 }
