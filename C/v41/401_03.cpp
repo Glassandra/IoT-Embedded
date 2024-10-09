@@ -3,29 +3,36 @@
 
 using namespace std;
 
-int sign(double d) {
+int sign(double d)
+{
     if (d > 0)
         return 1;
     else if (d < 0)
-        return -1;    
+        return -1;
     return 0;
 }
 
-bool isPrime(int number) {
-    if (number < 2) {
+bool isPrime(int number)
+{
+    if (number < 2)
+    {
         cout << "Please insert an int higher than 1" << endl;
         return false;
     }
-    for (int i = 2; i <= sqrt(number); i++) {
-        if (number % i == 0) {
+    for (int i = 2; i <= sqrt(number); i++)
+    {
+        if (number % i == 0)
+        {
             return false;
         }
     }
     return true;
 }
 
-bool isPerfect(int number) {
-    if (number < 2) {
+bool isPerfect(int number)
+{
+    if (number < 2)
+    {
         cout << "Please insert an int higher than 1" << endl;
         return false;
     }
@@ -33,10 +40,13 @@ bool isPerfect(int number) {
     int sum = 1;
     int sqrtNumber = sqrt(number);
 
-    for (int i = 2; i <= sqrtNumber; i++) {
-        if (number % i == 0) {
+    for (int i = 2; i <= sqrtNumber; i++)
+    {
+        if (number % i == 0)
+        {
             sum += i;
-            if (i != number / i) {
+            if (i != number / i)
+            {
                 sum += number / i;
             }
         }
