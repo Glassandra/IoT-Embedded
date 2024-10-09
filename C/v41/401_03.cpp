@@ -44,9 +44,7 @@ bool isPerfect(int number)
         {
             sum += i;
             if (i != number / i)
-            {
                 sum += number / i;
-            }
         }
     }
 
