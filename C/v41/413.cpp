@@ -1,25 +1,12 @@
 #include <iostream>
+#include <string>
 
 using namespace std;
 
 int textInText(const string &t1, const string &t2)
 {
-    int success = 0;
-    for (int i = 0; i < t2.length(); i++)
-    {
-        if (t2[i] == t1[0])
-        {
-            success = i;
-            for (int j = 1; j < t1.length(); j++)
-            {
-                if (t1[j] != t2[i + j])
-                    success = -1;
-            }
-            if (success > 0)
-                break;
-        }
-    }
-    return success;
+    size_t result = t2.find(t1);
+    return (int)result;
 }
 
 int main()
