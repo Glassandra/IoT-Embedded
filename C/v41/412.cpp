@@ -2,15 +2,15 @@
 
 using namespace std;
 
-int textInText(string t1, string t2)
+int textInText(char t1[], int t1length, char t2[], int t2length)
 {
     int success = 0;
-    for (int i = 0; i < t2.length(); i++)
+    for (int i = 0; i < t2length; i++)
     {
         if (t2[i] == t1[0])
         {
             success = i;
-            for (int j = 1; j < t1.length(); j++)
+            for (int j = 1; j < t1length; j++)
             {
                 if (t1[j] != t2[i + j])
                     success = -1;
@@ -24,10 +24,10 @@ int textInText(string t1, string t2)
 
 int main()
 {
-    string a = "hello";
-    string b = "imtestinghello";
-    int test = textInText(a, b);
+    char a[] = "hello";
+    char b[] = "imtestinghello";
+    int test = textInText(a, sizeof(a), b, sizeof(b));
     cout << "Test 1: " << test << endl;
-    cout << "Test 2: " << textInText("hello", "theresno");
+    cout << "Test 2: " << textInText("hello", sizeof("hello"), "theresno", sizeof("theresno"));
     return 0;
 }
