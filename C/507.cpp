@@ -7,7 +7,7 @@ char *strcopy(char *source, char *destination, size_t destination_length) {
     size_t i;
     for (i = 0; source[i] != '\0' && i < destination_length - 1; i++) {
         destination[i] = source[i];
-        if (i + 1 >= destination_length) {
+        if (i + 2 >= destination_length) {
             cout << "Error: too long source" << endl;
         }
     }
