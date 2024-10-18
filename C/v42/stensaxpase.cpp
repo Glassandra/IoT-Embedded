@@ -18,7 +18,7 @@ int newgame()
         {
             break;
         }
-        cout << "Error, please select one of the three: " << endl;
+        cout << "Vänligen väl Sten, Sax eller Pase: " << endl;
     }
 
     int randomNumber = rand() % 3;
@@ -59,7 +59,7 @@ void statistics(int &playerScore, int &computerScore, int &roundsPlayed)
 {
     cout << endl;
     cout << "--------------------------" << endl;
-    cout << "Total har " << roundsPlayed << " spelats" << endl;
+    cout << "Totalt har " << roundsPlayed << " spelats" << endl;
     if (roundsPlayed > 0) {
         cout << "Spelaren har " << playerScore << " poäng. Spelaren har vunnit " << (double)playerScore/roundsPlayed*100 << "% av matcherna" << endl;
         cout << "Datorn har " << computerScore << " poäng. Datorn har vunnit " << (double)computerScore/roundsPlayed*100 << "% av matcherna" << endl;
