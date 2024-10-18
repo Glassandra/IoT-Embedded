@@ -55,7 +55,7 @@ int newgame()
     }
 }
 
-void statistics(int playerScore, int computerScore, int roundsPlayed)
+void statistics(int &playerScore, int &computerScore, int &roundsPlayed)
 {
     cout << endl;
     cout << "--------------------------" << endl;
