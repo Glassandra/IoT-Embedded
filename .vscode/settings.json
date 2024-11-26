@@ -76,7 +76,8 @@
         "iomanip": "cpp",
         "semaphore": "cpp",
         "stop_token": "cpp",
-        "thread": "cpp"
+        "thread": "cpp",
+        "map": "cpp"
     },
     "cmake.sourceDirectory": "C:/Users/cassa/Documents/Projects/IOT/IoT-embedded/C/v46/yaml_project"
 }
