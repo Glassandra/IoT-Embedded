@@ -1,15 +1,21 @@
 
+%%{
+    init: {
+        'theme':'forest'
+    }
+}%%
 graph LR
-
-  subgraph " "
-    A[Phone App] --> B(Connect);
-    C[Website] --> B;
-  end
-  B --> Z
-  D{IoT Hub} <-- Gateway --> E1{Plant System};
-  E1 --> E3{Actuator};
-  Z[Cloud and Databases] --> Y{Plant Database};
+    subgraph " "
+        A[Phone App] --> B(Connect);
+        C[Website] --> B;
+    end
+    B --> Z
+    D{IoT Hub} <-- Gateway --> E1{Plant System};
+    style D fill#99f,stroke:#333,stroke-width:4px
+    E1 --> E3{Actuator};
+    Z[Cloud and Databases] --> Y{Plant Database};
     Z <--> D
+    D <--> E4{AI system}
   
     subgraph " "
         E1 <---> F[Moisture Sensor];
@@ -17,7 +23,8 @@ graph LR
         E1 <---> H[Light Sensor];
         E3 <--> I[Auto-Shading];
         E3 <--> J[Auto-Watering];
-    end  
+    end
+
     subgraph " "
         Y --> Y1[Plant species];
         Y --> Y2[Frequency of watering];
@@ -30,4 +37,4 @@ graph LR
         Y --> Y6[Defences];
         Y6 --> Y7[Insectides]
         Y6 --> Y8[Fungicides]
-  end
+    end
